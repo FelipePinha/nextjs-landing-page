@@ -1,0 +1,31 @@
+@import '../../styles/theme.scss';
+
+.button {
+    padding: 0.93rem 3.12rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.31rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &.primary {
+        background-color: $green-default;
+        color: $white;
+
+        &:hover {
+            background-color: $green-hover;
+        }
+    }
+
+    &.secondary {
+        background-color: $white;
+        color: $purple;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: $green-default;
+            color: $white;
+        }
+    }
+}
