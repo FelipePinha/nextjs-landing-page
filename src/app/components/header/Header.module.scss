@@ -1,6 +1,8 @@
 @import '../../styles/theme.scss';
+@import '../../styles/mixins/padding.scss';
 
 .header {
+    @include Padding;
     width: 100%;
     background-color: $purple;
     border-bottom: 0.031rem solid $gray;
