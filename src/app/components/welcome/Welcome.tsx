@@ -1,5 +1,7 @@
 import { Button } from '../button/Button';
+import WelcomeImg from '../../images/welcome-img.svg';
 import styles from './Welcome.module.scss';
+import Image from 'next/image';
 
 export const Welcome = () => {
     return (
@@ -12,7 +14,9 @@ export const Welcome = () => {
                 </p>
                 <Button theme="secondary" title="Aumentar vendas" />
             </div>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+                <Image src={WelcomeImg} alt="Welcome info image" />
+            </div>
         </section>
     );
 };

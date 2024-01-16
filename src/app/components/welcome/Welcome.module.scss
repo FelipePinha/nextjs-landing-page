@@ -1,11 +1,28 @@
-.text {
-    h1 {
-        font-weight: bold;
-        font-size: 4.43rem;
+@import '../../styles/mixins/padding.scss';
+
+.welcome {
+    @include Padding;
+    background-image: url('../../images/welcome-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    padding-top: 13.68rem;
+
+    .text {
+        h1 {
+            font-weight: bold;
+            font-size: 4.43rem;
+        }
+
+        p {
+            font-size: 1.87rem;
+            opacity: 0.7;
+        }
     }
 
-    p {
-        font-size: 1.87rem;
-        opacity: 0.8;
+    .image {
+        text-align: end;
     }
 }
