@@ -2,6 +2,7 @@ import Logo from '@/app/images/agência.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Header.module.scss';
+import { Button } from '../button/Button';
 
 export const Header = () => {
     return (
@@ -23,7 +24,7 @@ export const Header = () => {
                 </ul>
             </div>
             <div className={styles.action}>
-                <button className={styles.button}>Fale conosco</button>
+                <Button theme="primary" title="Fale conosco" />
             </div>
         </header>
     );
