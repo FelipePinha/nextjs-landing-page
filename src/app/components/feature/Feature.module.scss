@@ -1,0 +1,21 @@
+@import '../../styles/theme.scss';
+
+.feature {
+    width: 31.81rem;
+    height: 21.68rem;
+    padding: 2rem 2.18rem;
+    border-radius: 0.31rem;
+    background-color: $white;
+
+    h3 {
+        font-weight: bold;
+        font-size: 2.56rem;
+        color: $dark-purple;
+        margin: 1rem 0;
+    }
+
+    p {
+        font-size: 1.37rem;
+        color: $dark-gray;
+    }
+}
