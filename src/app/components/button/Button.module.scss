@@ -10,11 +10,11 @@
     transition: background-color 0.2s ease;
 
     &.primary {
-        background-color: $green-default;
+        background-color: $green-primary;
         color: $white;
 
         &:hover {
-            background-color: $green-hover;
+            background-color: $green-secondary;
         }
     }
 
@@ -24,7 +24,7 @@
         transition: all 0.2s ease;
 
         &:hover {
-            background-color: $green-default;
+            background-color: $green-primary;
             color: $white;
         }
     }
