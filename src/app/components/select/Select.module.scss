@@ -1,0 +1,11 @@
+@import '../../styles/theme.scss';
+
+.select {
+    padding: 1.37rem 1.06rem;
+    background-color: $very-light-gray;
+    border-radius: 0.31rem;
+    border: none;
+    font-size: 1.18rem;
+    font-weight: 300;
+    color: $dark-gray-secondary;
+}
