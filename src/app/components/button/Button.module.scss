@@ -1,8 +1,9 @@
 @import '../../styles/theme.scss';
+@import '../../styles/mixins/fonts.scss';
 
 .button {
     padding: 0.93rem 3.12rem;
-    font-size: 1rem;
+    @include SizeSmall;
     font-weight: bold;
     border-radius: 0.31rem;
     border: none;
@@ -32,7 +33,7 @@
     &.full {
         padding: 1.31rem;
         width: 100%;
-        font-size: 1.31rem;
+        @include SizeNormal;
         font-weight: 600;
         background-color: $green-primary;
         color: $white;

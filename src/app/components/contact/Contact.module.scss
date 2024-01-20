@@ -1,5 +1,7 @@
 @import '../../styles/theme.scss';
 @import '../../styles/mixins/padding.scss';
+@import '../../styles/mixins/responsive.scss';
+@import '../../styles/mixins/fonts.scss';
 
 .contact {
     @include Padding;
@@ -14,23 +16,31 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 10rem;
+
+    @include Phone {
+        grid-template-columns: 1fr;
+    }
 }
 
 .texts {
     span {
-        font-size: 1.87rem;
+        @include SizeNormal;
         font-weight: bold;
         color: $green-secondary;
     }
 
     h2 {
-        font-size: 4.06rem;
+        @include SizeLarge;
         margin: 1rem 0;
     }
 
     p {
-        font-size: 1.87rem;
+        @include SizeNormal;
         opacity: 0.7;
+    }
+
+    @include Phone {
+        text-align: center;
     }
 }
 
@@ -40,6 +50,10 @@
     border: 0.5px solid $light-gray;
     border-radius: 0.62rem;
     padding: 2.37rem 1.93rem;
+
+    @include Phone {
+        margin-top: 3rem;
+    }
 
     h3 {
         color: $purple;
@@ -59,6 +73,10 @@
     padding: 0 6rem;
     line-height: 2rem;
     color: $gray;
+
+    @include Phone {
+        grid-column-start: 1;
+    }
 
     span {
         color: $white;
