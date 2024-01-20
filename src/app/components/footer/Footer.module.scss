@@ -1,4 +1,6 @@
 @import '../../styles/mixins/padding.scss';
+@import '../../styles/mixins/responsive.scss';
+@import '../../styles/mixins/fonts.scss';
 @import '../../styles/theme.scss';
 
 .footer {
@@ -7,6 +9,12 @@
     background-color: $very-dark-purple;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    @include Phone {
+        grid-template-columns: 1fr;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
 }
 
 .column {
@@ -17,14 +25,14 @@
     }
 
     .title {
-        font-size: 2.5rem;
+        @include SizeNormal;
         font-weight: 300;
         color: $white;
         margin: 0.8rem 0;
     }
 
     h3 {
-        font-size: 1.5rem;
+        @include SizeSmall;
         color: $green-primary;
     }
 
@@ -38,10 +46,18 @@
         display: flex;
         gap: 2rem;
         justify-content: flex-end;
+
+        @include Phone {
+            justify-content: flex-start;
+        }
     }
 
     .alignRight {
         text-align: right;
+
+        @include Phone {
+            text-align: left;
+        }
     }
 }
 
@@ -51,4 +67,8 @@
     color: $gray;
     grid-column: span 4;
     text-align: center;
+
+    @include Phone {
+        grid-column: 1;
+    }
 }
