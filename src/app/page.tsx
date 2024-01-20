@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            {/* <Welcome /> */}
+            <Welcome />
             {/* <Features /> */}
             {/* <Contact /> */}
             {/* <Footer /> */}

@@ -1,4 +1,6 @@
 @import '../../styles/mixins/padding.scss';
+@import '../../styles/mixins/responsive.scss';
+@import '../../styles/mixins/fonts.scss';
 
 .welcome {
     @include Padding;
@@ -10,14 +12,24 @@
     height: 100vh;
     padding-top: 13.68rem;
 
+    @include Phone {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        background-size: cover;
+    }
+
     .text {
+        @include Phone {
+            text-align: center;
+        }
+
         h1 {
             font-weight: bold;
-            font-size: 4.43rem;
+            @include TitleSize;
         }
 
         p {
-            font-size: 1.87rem;
+            @include SubTitle;
             opacity: 0.7;
             margin: 2rem 0;
         }
@@ -25,5 +37,15 @@
 
     .image {
         text-align: end;
+
+        @include Phone {
+            text-align: center;
+            grid-column: 1;
+            grid-row: 1;
+
+            img {
+                max-width: 100%;
+            }
+        }
     }
 }
