@@ -1,5 +1,6 @@
 @import '../../styles/theme.scss';
 @import '../../styles/mixins/padding.scss';
+@import '../../styles/mixins/responsive.scss';
 
 .header {
     @include Padding;
@@ -10,6 +11,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 2.12rem 11.25rem;
+
+    @include Phone {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 .menu {
@@ -22,5 +28,15 @@
         margin-left: 1.68rem;
         font-size: 1.37rem;
         color: $white;
+    }
+
+    @include Phone {
+        display: none;
+    }
+}
+
+.action {
+    @include Phone {
+        display: none;
     }
 }
