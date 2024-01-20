@@ -1,4 +1,6 @@
 @import '../../styles/theme.scss';
+@import '../../styles/mixins/responsive.scss';
+@import '../../styles/mixins/fonts.scss';
 
 .feature {
     width: 31.81rem;
@@ -7,9 +9,14 @@
     border-radius: 0.31rem;
     background-color: $white;
 
+    @include Phone {
+        width: 100%;
+        height: 100%;
+    }
+
     h3 {
         font-weight: bold;
-        font-size: 2.56rem;
+        @include SizeMedium;
         color: $dark-purple;
         margin: 1rem 0;
     }

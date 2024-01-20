@@ -1,5 +1,7 @@
 @import '../../styles/theme.scss';
 @import '../../styles/mixins/padding.scss';
+@import '../../styles/mixins/responsive.scss';
+@import '../../styles/mixins/fonts.scss';
 
 .features {
     display: flex;
@@ -9,21 +11,29 @@
     @include Padding;
 
     h2 {
-        font-size: 4.06rem;
+        @include SizeLarge;
         font-weight: bold;
     }
 
     p {
-        font-size: 1.87rem;
+        @include SizeNormal;
         opacity: 0.7;
         margin-bottom: 12rem;
         margin-top: 1rem;
+
+        @include Phone {
+            margin-bottom: 2rem;
+        }
     }
 
     & > h2,
     & > p {
         width: 56.3rem;
         text-align: center;
+
+        @include Phone {
+            width: 100%;
+        }
     }
 }
 
@@ -31,4 +41,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4.25rem;
+
+    @include Phone {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
