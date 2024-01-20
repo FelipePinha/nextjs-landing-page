@@ -8,7 +8,12 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
     justify-content: space-between;
-    gap: 9.37rem;
+    gap: 0.93rem 3rem;
+
+    background-image: url('../../images/welcome-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 10rem;
 }
 
 .texts {
@@ -45,5 +50,18 @@
     form {
         display: grid;
         gap: 1.43rem;
+    }
+}
+
+.footer {
+    grid-column-start: 2;
+    text-align: center;
+    padding: 0 6rem;
+    line-height: 2rem;
+    color: $gray;
+
+    span {
+        color: $white;
+        cursor: pointer;
     }
 }

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Button } from '../button/Button';
 import { Input } from '../input/Input';
 import { Select } from '../select/Select';
@@ -33,6 +34,12 @@ export const Contact = () => {
                     />
                     <Button title="Enviar" theme="full" />
                 </form>
+            </div>
+            <div className={styles.footer}>
+                <p>
+                    Ao enviar esse formulário, você reconhece que leu e concorda com a nossa{' '}
+                    <span> Política de Privacidade.</span>
+                </p>
             </div>
         </section>
     );
