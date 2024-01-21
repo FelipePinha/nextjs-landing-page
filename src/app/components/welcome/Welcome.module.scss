@@ -18,6 +18,11 @@
         background-size: cover;
     }
 
+    @include Tablet {
+        height: 100%;
+        margin: 5rem 0 10rem;
+    }
+
     .text {
         @include Phone {
             text-align: center;
@@ -42,6 +47,14 @@
             text-align: center;
             grid-column: 1;
             grid-row: 1;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        @include Tablet {
+            text-align: center;
 
             img {
                 max-width: 100%;

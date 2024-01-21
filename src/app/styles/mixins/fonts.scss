@@ -6,6 +6,14 @@
     @include Phone {
         font-size: 2.18rem;
     }
+
+    @include Tablet {
+        font-size: 3.12rem;
+    }
+
+    @include Laptop {
+        font-size: 3.438rem;
+    }
 }
 
 @mixin SizeLarge {
@@ -13,6 +21,14 @@
 
     @include Phone {
         font-size: 2rem;
+    }
+
+    @include Tablet {
+        font-size: 2.813rem;
+    }
+
+    @include Laptop {
+        font-size: 3.125rem;
     }
 }
 
@@ -22,6 +38,14 @@
     @include Phone {
         font-size: 1.6rem;
     }
+
+    @include Tablet {
+        font-size: 2rem;
+    }
+
+    @include Laptop {
+        font-size: 2.18rem;
+    }
 }
 
 @mixin SizeNormal {
@@ -30,6 +54,14 @@
     @include Phone {
         font-size: 1.3rem;
     }
+
+    @include Tablet {
+        font-size: 1.25rem;
+    }
+
+    @include Laptop {
+        font-size: 1.75rem;
+    }
 }
 
 @mixin SizeSmall {
@@ -37,5 +69,13 @@
 
     @include Phone {
         font-size: 0.68rem;
+    }
+
+    @include Tablet {
+        font-size: 0.938rem;
+    }
+
+    @include Laptop {
+        font-size: 1.125rem;
     }
 }

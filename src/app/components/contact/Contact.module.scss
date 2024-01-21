@@ -20,6 +20,10 @@
     @include Phone {
         grid-template-columns: 1fr;
     }
+
+    @include Tablet {
+        margin-bottom: 4rem;
+    }
 }
 
 .texts {
@@ -76,6 +80,11 @@
 
     @include Phone {
         grid-column-start: 1;
+        padding: 0 1rem;
+    }
+
+    @include Tablet {
+        padding: 0 1rem;
     }
 
     span {

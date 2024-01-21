@@ -39,4 +39,8 @@
     @include Phone {
         display: none;
     }
+
+    @include Tablet {
+        display: none;
+    }
 }

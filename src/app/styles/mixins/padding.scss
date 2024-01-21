@@ -6,4 +6,12 @@
     @include Phone {
         padding: 0 1rem;
     }
+
+    @include Tablet {
+        padding: 0 2rem;
+    }
+
+    @include Laptop {
+        padding: 0 3rem;
+    }
 }
